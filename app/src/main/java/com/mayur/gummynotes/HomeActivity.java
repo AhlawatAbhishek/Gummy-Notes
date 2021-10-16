@@ -117,7 +117,7 @@ public class HomeActivity extends AppCompatActivity {
         AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(this);
         RemoteViews remoteViews = new RemoteViews(this.getPackageName(), R.layout.widget_lay);
         ComponentName thisWg = new ComponentName(this, AppWig.class);
-        remoteViews.setTextViewText(R.id.homeET, editText.getText().toString());
+        remoteViews.setTextViewText(R.id.widgetTxtV, editText.getText().toString());
         appWidgetManager.updateAppWidget(thisWg, remoteViews);
 
     }
